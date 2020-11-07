@@ -10,6 +10,7 @@ public:
   void backwards(int speed);
   void right(int speed, int time);
   void left(int speed, int time);
+  void beyblade();
   void stop();
 
 private:

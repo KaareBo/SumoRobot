@@ -76,6 +76,18 @@ void Sumo::left(int speed, int time){
   Sumo::stop();
 }
 
+void Sumo::beyblade(){
+//Motor A
+analogWrite(_speedA, 255);
+digitalWrite(_dirA1, HIGH);
+digitalWrite(_dirA2, LOW);
+
+//Motor B
+analogWrite(_speedB, 255);
+digitalWrite(_dirB1, HIGH);
+digitalWrite(_dirB2, LOW);  
+}
+
 
 void Sumo::stop(){
   //Kontroll av motor A
